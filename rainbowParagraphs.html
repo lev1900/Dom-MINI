@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow</title>
+</head>
+<body>
+    <h1>Color Words</h1>
+    <p>Red</p>
+    <p>Blue</p>
+    <p>Green</p>
+    <p>Yellow</p>
+    <script>
+        let paragraphs= document.getElementsByTagName("p");
+        console.log(paragraphs.length);
+        paragraphs[0].style.color="red";
+        paragraphs[1].style.color="blue";
+        paragraphs[2].style.color="green";
+        paragraphs[3].style.color="yellow";
+
+        paragraphs[1].textContent="Gold";
+        console.log(paragraphs[0].innerText);
+        console.log(paragraphs[1].innerText);
+      let heading= document.getElementsByTagName("h1").textContent="Rainbow Words";
+    </script>
+</body>
+</html>

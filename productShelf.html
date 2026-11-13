@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productShelf</title>
+</head>
+<body>
+    <h2 id="shelfTitle">Store Shelf</h2>
+    <p class="product">Notebook</p>
+    <p class="product featured">Backpack</p>
+    <p class="product">Pencil Case</p>
+    <p class="product featured">Water Bottle</p>
+    <script>
+        let products=document.getElementsByClassName("product");
+        let firstFeatured=document.querySelector(".product");
+        let allFeatured=document.querySelectorAll(".product featured");
+        console.log(products.length);
+        console.log(allFeatured.length);
+        firstFeatured.style.backgroundColor="yellow";
+        products[1].style.backgroundColor="orange";
+        products[0].textContent="Sold Out";
+        products[0].style.backgroundColor="grey";
+        console.log(firstFeatured.textContent);
+    </script>
+</body>
+</html>

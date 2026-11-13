@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Tree</title>
+</head>
+<body>
+    <div id="grandparent">
+        <div id="parent">
+            <p id="child">I am the child</p>
+        </div>
+    </div>
+    <script>
+        let parent=document.getElementById("child").parentElement;
+        console.log(parent.id);
+        let grandparent= document.getElementById("parent").parentElement;
+        console.log(grandparent.id);
+        parent.style.backgroundColor="lightblue";
+        grandparent.style.backgroundColor="lightgreen";
+    </script>
+</body>
+</html>

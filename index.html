@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom MINI</title>
+</head>
+<body>
+    <div id="tag">
+        <h1 id="greeting">HELLO</h1>
+        <p id="myName">my name is</p>
+        <h2 id="studentName">Your Name Here</h2>
+    </div>
+    <script>
+        let greetings=document.getElementById("greeting");
+        let name=document.getElementById("myName");
+        let student=document.getElementById("studentName");
+        let tag= document.getElementById("tag");
+
+        greetings.textContent="WELCOME!!!";
+        student.textContent="Ellie";
+        tag.style.backgroundColor="blue";
+        student.style.color="white";
+        name.style.backgroundColor="black";
+        name.style.color="red";
+        console.log(greetings);
+        console.log(student);
+    </script>
+</body>
+</html>
