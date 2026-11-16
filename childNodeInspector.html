@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Node Inspector</title>
+</head>
+<body>
+    <div id="menu"><b>Home</b><i>About</i><u>Contact</u></div>
+    <div id="toolbar"><button>Save</button><span>Draft</span></div>
+
+    <script>
+        let menu = document.getElementById('menu');
+        let toolbar = document.getElementById('toolbar');
+       console.log(menu.childNodes.length);
+        console.log(menu.firstChild.nodeName);
+        console.log(menu.lastChild.nodeName);
+        console.log(toolbar.childNodes.length);
+        console.log(toolbar.firstChild.nodeName);
+        console.log(toolbar.lastChild.nodeName);
+        menu.firstChild.textContent="Start";
+        menu.lastChild.textContent="Help";
+       console.log(menu.childNodes[1].textContent);
+    </script>
+</body>
+</html>

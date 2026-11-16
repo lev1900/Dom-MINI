@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile card makeover</title>
+</head>
+<body>
+    <div id="profile">
+        <h2 id="profileName">Name</h2>
+        <img id="avatar" alt="placeholder">
+        <p class="detail">Job title</p>
+        <p class="detail">City</p>
+        <p class="detail">Hobby</p>
+    </div>
+    <script>
+        let profile= document.getElementById("profile");
+        let avatar= document.getElementById("avatar");
+        let details= document.getElementsByClassName("detail");
+        let detailOne=document.querySelector(".detail");
+        document.getElementById("profileName").textContent="Ellie";
+        profile.style.backgroundColor="lightblue";
+        profileName.style.color="darkturquoise";
+        detailOne.parentElement;
+        console.log(detailOne.parentElement);
+        console.log(profile.childNodes.length);
+        console.log(profile.firstChild ,profile.lastChild);
+    </script>
+</body>
+</html>
